@@ -1,0 +1,18 @@
+# Drone Communication & Autonomy
+dronekit>=2.9.2           # Python ile Drone'u uçurmak için (Sanal Pilot)
+pymavlink>=2.4.8          # Pixhawk ile konuşan düşük seviye protokol
+pyserial>=3.5             # Telemetri modülü (USB/UART) ile seri haberleşme için
+
+# Mathematics & Algorithms
+numpy>=1.24.0             # Vektör matematiği (Sürü hareketi ve koordinatlar)
+scipy>=1.10.0             # Optimizasyon (Trilaterasyon / Konum bulma denklemleri)
+
+# Signal Processing & Intelligence
+scapy>=2.5.0              # Wi-Fi Sniffer (Havayı dinleme ve paket yakalama)
+filterpy>=1.4.5           # Kalman Filtresi (Sinyal gürültüsünü temizleme)
+
+# Simulation & Visualization
+matplotlib>=3.7.0         # Simülasyon verilerini grafik çizdirmek için (Demo)
+
+# Network & Utilities
+netifaces>=0.11.0         # Ağ kartı (IP/MAC) bilgilerini okumak için
