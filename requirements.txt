@@ -1,18 +1,62 @@
+# ============================================
+# AUTONOMOUS DISASTER DRONE SWARM - REQUIREMENTS
+# ============================================
+
 # Drone Communication & Autonomy
-dronekit>=2.9.2           # Python ile Drone'u uçurmak için (Sanal Pilot)
-pymavlink>=2.4.8          # Pixhawk ile konuşan düşük seviye protokol
-pyserial>=3.5             # Telemetri modülü (USB/UART) ile seri haberleşme için
+dronekit>=2.9.2           # Drone kontrolü (Pixhawk/ArduPilot)
+pymavlink>=2.4.8          # MAVLink protokolü
+pyserial>=3.5             # Seri haberleşme
 
 # Mathematics & Algorithms
-numpy>=1.24.0             # Vektör matematiği (Sürü hareketi ve koordinatlar)
-scipy>=1.10.0             # Optimizasyon (Trilaterasyon / Konum bulma denklemleri)
+numpy>=1.24.0             # Vektör matematiği
+scipy>=1.10.0             # Optimizasyon ve trilaterasyon
 
 # Signal Processing & Intelligence
-scapy>=2.5.0              # Wi-Fi Sniffer (Havayı dinleme ve paket yakalama)
-filterpy>=1.4.5           # Kalman Filtresi (Sinyal gürültüsünü temizleme)
+scapy>=2.5.0              # Wi-Fi sniffer (SIGINT)
+filterpy>=1.4.5           # Kalman filtresi
 
 # Simulation & Visualization
-matplotlib>=3.7.0         # Simülasyon verilerini grafik çizdirmek için (Demo)
+matplotlib>=3.7.0         # 3D görselleştirme
+plotly>=5.13.0            # İnteraktif grafikler (opsiyonel)
 
 # Network & Utilities
-netifaces>=0.11.0         # Ağ kartı (IP/MAC) bilgilerini okumak için
+netifaces>=0.11.0         # Ağ arayüz bilgileri
+
+# ============================================
+# OPSIYONEL: Gerçek Drone Donanımı İçin
+# ============================================
+
+# SITL Simülasyonu (Software In The Loop)
+# dronekit-sitl>=3.3.0    # SITL test için (opsiyonel)
+
+# Computer Vision (Engel Algılama)
+# opencv-python>=4.7.0    # Kamera görüntü işleme
+# ultralytics>=8.0.0      # YOLO object detection
+
+# GPS & Navigation
+# gpsd-py3>=0.3.0         # GPS daemon interface
+
+# Advanced Mesh Networking
+# pyzmq>=25.0.0           # ZeroMQ mesh network
+# paho-mqtt>=1.6.1        # MQTT protokolü
+
+# Logging & Monitoring
+# prometheus-client>=0.16.0  # Metrikler
+# psutil>=5.9.0           # Sistem monitoring
+
+# ============================================
+# DEVELOPMENT & TESTING
+# ============================================
+
+# pytest>=7.2.0           # Unit testler
+# black>=23.1.0           # Code formatting
+# flake8>=6.0.0           # Linting
+# mypy>=1.0.0             # Type checking
+
+# ============================================
+# RASPBERRY PI SPECIFIC
+# ============================================
+
+# RPi.GPIO>=0.7.1         # GPIO kontrol
+# adafruit-circuitpython-bno055  # IMU sensör
+# smbus2>=0.4.1           # I2C haberleşme
